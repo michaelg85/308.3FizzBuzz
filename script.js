@@ -11,15 +11,15 @@
 // I IS THE VARIABLE NAME
 
 
-for (let i = 1; i <= 100; i++){
-    if (i % 3 === 0 && i % 5 ===0){
-        console.log(`Fizz Buzz`);
-    } else if (i % 3 === 0){
-        console.log(`Fizz`);
-    } else if (i % 5 ===0){
-        console.log(`Buzz`)
-    } else {console.log(i)}
-}   
+// for (let i = 1; i <= 100; i++){
+//     if (i % 3 === 0 && i % 5 ===0){
+//         console.log(`Fizz Buzz`);
+//     } else if (i % 3 === 0){
+//         console.log(`Fizz`);
+//     } else if (i % 5 ===0){
+//         console.log(`Buzz`)
+//     } else {console.log(i)}
+// }   
 
 
 
@@ -41,11 +41,11 @@ for (let i = 1; i <= 100; i++){
 // Be careful! If you set n to a number too large, your loop could take a long time to process.
 
 
-for (let n = 0; n < >; n++){
-    if (n % 2 !== 0 && n % 3 !== 0){
-        console.log(`${n} is Prime`);
-    } 
-}
+// for (let n = 0; n < >; n++){
+//     if (n % 2 !== 0 && n % 3 !== 0){
+//         console.log(`${n} is Prime`);
+//     } 
+// }
 
 
 
@@ -99,12 +99,37 @@ for (let n = 0; n < >; n++){
 // Use the example string provided above to test your program. Once you are confident it is working correctly, try the following string to see if your program works properly with other data.
 // Index,Mass (kg),Spring 1 (m),Spring 2 (m)\n1,0.00,0.050,0.050\n2,0.49,0.066,0.066\n3,0.98,0.087,0.080\n4,1.47,0.116,0.108\n5,1.96,0.142,0.138\n6,2.45,0.166,0.158\n7,2.94,0.193,0.174\n8,3.43,0.204,0.192\n9,3.92,0.226,0.205\n10,4.41,0.238,0.232
 
-for (let str = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"){
+const str = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26`;
+let splitChars = ",";
+let nextRow = "\n";
 
+
+
+for (let i in str) {
+    if(i >= splitChars){
+
+    }
+	console.log(str[i]);
 }
 
-for (str = 0; str < str.length; str++){
-    console.log (cell1, cell2, cell3, cell4)
-}
+// for (let i = 0; i < str.length; i++){
+//     if (str > nextRow && str == splitChars)
+//     console.log (cell1, cell2, cell3, cell4)
+// }
 
-// PART 3 is on the Thursday LAB
+
+// let cell1 = char1
+// let cell2 = char2
+// let cell3 = char3
+// let cell4 = char4
+
+// let cell1 = str < 4
+// let cell2 = str > 4 && str < 9
+// let cell3 = str > 9 && str < 13
+// let cell4 = str > 13 && str < 17
+
+// let row1 = ID,Name,Occupation,Age
+// let row2 = 42,Bruce,Knight,41
+// let row3 = 57,Bob,Fry Cook,19
+// let row4 = 63,Blaine,Quiz Master,58
+// let row5 = 98,Bill,Doctor’s Assistant,26
